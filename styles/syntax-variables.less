@@ -1,0 +1,37 @@
+@import "colors";
+
+// Custom syntax definitions
+
+// needs to be semi-transparent to show search results
+@syntax-cursor-line: lighten(fade(@background, 4%), 100%);
+@syntax-bracket-matcher-background-color: lighten(@background, 10%);
+
+// Official syntax definitions
+
+// General colors
+@syntax-text-color: lighten(@gray, 60%);
+@syntax-cursor-color: lighten(@background, 25%);
+@syntax-selection-color: lighten(@background, 10%);
+@syntax-background-color: @background;
+
+// Guide colors
+@syntax-wrap-guide-color: @background;
+@syntax-indent-guide-color: lighten(@background, 10%);
+@syntax-invisible-character-color: @current-line;
+
+// For find and replace markers
+@syntax-result-marker-color: @comment;
+@syntax-result-marker-color-selected: @foreground;
+
+// Gutter colors
+@syntax-gutter-text-color: lighten(@background, 30%);
+@syntax-gutter-text-color-selected: lighten(@background, 60%);
+@syntax-gutter-background-color: @background;
+@syntax-gutter-background-color-selected: @background;
+@syntax-gutter-border-color: lighten(@background, 10%);
+
+// For git diff info. i.e. in the gutter
+@syntax-color-renamed: @blue;
+@syntax-color-added: @green;
+@syntax-color-modified: @orange;
+@syntax-color-removed: @red;

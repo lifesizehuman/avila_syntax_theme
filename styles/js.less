@@ -1,0 +1,103 @@
+@import "colors";
+
+.syntax--js {
+  &.syntax--constant.syntax--other.syntax--property {
+    color: @foreground;
+
+  }
+
+  &.syntax--keyword.syntax--operator {
+    color: @aqua;
+  }
+
+  &.syntax--variable {
+    color: @very-light-gray;
+
+
+    &.syntax--class {
+      color: @red;
+      font-style: italic;
+
+    }
+
+    &.syntax--language {
+      color: @red;
+      font-style: italic;
+
+    }
+  }
+
+  &.syntax--string.syntax--unquoted {
+    color: @orange;
+  }
+
+  &.syntax--support {
+    &.syntax--constant {
+      color: @foreground;
+    }
+
+    &.syntax--object {
+      color: @yellow;
+      font-style: italic;
+
+    }
+
+    &.syntax--variable {
+      color: @purple;
+    }
+  }
+
+  &.syntax--meta.syntax--brace.syntax--square {
+    color: @blue;
+  }
+
+  &.syntax--meta.syntax--brace.syntax--curly {
+    color: @red;
+  }
+
+  &.syntax--meta.syntax--brace.syntax--round {
+    color: @aqua;
+  }
+
+  &.syntax--meta.syntax--delimiter.syntax--period,
+  &.syntax--meta.syntax--delimiter.syntax--comma {
+    color: @aqua;
+  }
+
+  &.syntax--meta.syntax--group.syntax--braces.syntax--round.syntax--function.syntax--arguments {
+    color: @aqua;
+  }
+
+  &.syntax--punctuation {
+    &.syntax--separator.syntax--key-value {
+      color: @aqua;
+    }
+
+    &.syntax--definition {
+      &.syntax--string {
+        color: @green;
+
+      }
+
+      &.syntax--parameters {
+        color: @aqua;
+      }
+
+      &.syntax--arguments {
+        color: @aqua;
+      }
+
+      &.syntax--bracket.syntax--curly {
+        color: @red;
+      }
+    }
+
+    &.syntax--section.syntax--class {
+      color: @red;
+    }
+
+    &.syntax--terminator.syntax--statement {
+      color: @yellow;
+    }
+  }
+}
